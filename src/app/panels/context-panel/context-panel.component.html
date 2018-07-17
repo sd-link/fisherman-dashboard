@@ -1,9 +1,32 @@
 <div class="context-container">
+  <!-- title -->
   <div class="context-title-container">
-    <input type="text" class="input-dashboard-title" placeholder="DASHBOARD TITLE">
-    <button class="btn btn-dashbard btn-dark">x</button>
+    <input type="text" class="input-dashboard-title" value="DASHBOARD TITLE">
+    <button class="btn btn-dashbard btn-dark"><i class="fa fa-arrow-down fa-1x" aria-hidden="true"> </i></button>
+  </div>
+  <!-- search -->
+  <div class="context-search-container">
+    <input class="input-search" type="text" placeholder="Search" aria-label="Search">
+    <div class="custom-dropdown dropdown-search">all</div>
   </div>
   <hr>
-
-
+  <!-- period -->
+  <div class="context-period-container">
+    <div class="custom-dropdown dropdown-period">custom</div>
+    <div class="date-picker-container"><my-date-picker class="" [options]="myDatePickerOptions" [(ngModel)]="dateStartModel" required></my-date-picker></div>
+    <div class="date-picker-container"><my-date-picker class="" [options]="myDatePickerOptions" [(ngModel)]="dateEndModel" required></my-date-picker></div>
+  </div>
+  <hr>
+  <!-- clusters (bubbles chart) -->
+  <div class="context-bubble-chart-container">
+    <app-bubble-chart [chartWidth]="400"  [chartHeight]="400" [data]="clusterData"> </app-bubble-chart>
+    <div class="dropdowns-container">
+      <div class="custom-dropdown dropdown-number">top 10</div>
+      <div class="custom-dropdown dropdown-sort">sort</div>
+    </div>
+    <div class="context-subtitle">
+      Clusters
+    </div>
+  </div>
+ 
 </div>

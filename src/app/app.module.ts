@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { EntryPanelComponent } from './panels/entry-panel/entry-panel.component';
 import { ContextPanelComponent } from './panels/context-panel/context-panel.component';
 import { DataPanelComponent } from './panels/data-panel/data-panel.component';
-
+import { MyDatePickerModule } from 'mydatepicker';
+import { BubbleChartComponent } from './panels/context-panel/bubble-chart/bubble-chart.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +17,14 @@ import { DataPanelComponent } from './panels/data-panel/data-panel.component';
     EntryPanelComponent,
     ContextPanelComponent,
     DataPanelComponent,
+    BubbleChartComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MyDatePickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,3 +5,34 @@
 .btn-dashbard {
   border-radius: 0 !important;
 }
+
+
+
+.mydp {
+  height: 25px !important;
+  border: none !important;
+
+  .selectiongroup {
+    border-radius: 0px !important;
+    position: relative;
+    width: 100% !important;
+    input {
+      height: 25px !important;
+      border-radius: 0px;
+      margin-left: 30px;
+      width: 130px;
+    }
+    .selbtngroup {
+      height: 25px !important;
+      position: absolute;
+      .btnclear {
+        display: none !important;
+      }
+      .btnpicker {
+        background-color: black;
+        color: white;
+        border-radius: 0px;
+      }
+    }
+  }
+}

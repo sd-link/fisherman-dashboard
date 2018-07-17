@@ -1,0 +1,6 @@
+.tmp
+.sass-cache
+.publish
+coverage/
+dist/
+node_modules/

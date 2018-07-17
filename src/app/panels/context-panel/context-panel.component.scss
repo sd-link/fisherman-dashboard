@@ -4,21 +4,116 @@
   background-color: $color-primary;
   min-width: 400px;
   color: white;
-  padding: 20px;
-}
-.context-title-container {
-  display: flex;
-  justify-content: space-between;
-}
+  padding: 25px;
 
-.input-dashboard-title {
-  width: 100%;
-  margin-right: 5px;
-  border: 1px dashed white !important;
-  background-color: $color-primary;
-  color: white;
-}
+  // title
+  .context-title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 
-.btn-dark {
-  background-color: $color-dark;
+    .input-dashboard-title {
+      width: 100%;
+      margin-right: 5px;
+      border: 1px dashed white !important;
+      background-color: $color-primary;
+      color: white;
+      font-size: 18px;
+      padding: 3px !important;
+      height: 30px;
+    }
+    .btn-dark {
+      background-color: $color-dark;
+      height: 30px;
+      padding: 3px;
+      width: 30px;
+    }   
+  }
+
+  // search
+  .context-search-container {
+    position: relative;
+
+    .input-search {
+      color: black;
+      border: 2px solid #e6e6e6;
+      height: 35px;
+      width: 100%;
+      border-radius: 17px;  
+      font-size: 12px;
+      padding: 2px 10px;
+    }
+
+    .dropdown-search {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      height: 35px;
+      color: $color-primary;
+      padding: 4px 10px;
+      width: 80px;
+    }
+  }
+
+  hr {
+    border-top: 1px solid white;
+    -webkit-margin-before: 10px;
+    -webkit-margin-after: 10px;
+  }
+
+  // period
+  .context-period-container {
+    display: flex;
+    .dropdown-period {
+      width: 100px;
+      min-width: 100px;
+    }    
+    .date-picker-container {
+      height: 25px;
+      margin-left: 10px;
+      min-width: 160px;
+    }
+  }
+
+  // clusters (bubbles chart)
+  .context-bubble-chart-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    .dropdowns-container {
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+      display: flex;
+      color: gray;
+      font-size: 12px;
+    }
+  }
+
+
+  .custom-dropdown {
+    cursor: pointer;
+    &::before {
+      font-family: FontAwesome;
+      display: inline-block;
+      padding: 1px 4px;
+      vertical-align: middle;
+      content: "\f107";
+    }
+  }
+
+  .context-subtitle {
+    position: absolute;
+    top:5px;
+    left: 10px;
+    color: $color-primary;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+
+
 }
