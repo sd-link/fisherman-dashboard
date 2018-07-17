@@ -1,0 +1,24 @@
+@import '~sass/variables';
+
+.context-container {
+  background-color: $color-primary;
+  min-width: 400px;
+  color: white;
+  padding: 20px;
+}
+.context-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-dashboard-title {
+  width: 100%;
+  margin-right: 5px;
+  border: 1px dashed white !important;
+  background-color: $color-primary;
+  color: white;
+}
+
+.btn-dark {
+  background-color: $color-dark;
+}

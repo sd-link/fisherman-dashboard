@@ -1,0 +1,30 @@
+@import '~sass/variables';
+
+.entry-container {
+  background-color: black;
+  padding: 15px;
+  min-width: 150px;
+  color: white;
+}
+
+.entry-logo-container {
+  min-width: 100px;
+  font-size: 25px;
+  min-height: 100px;
+}
+
+hr {
+  border-top: 1px solid white;
+}
+
+.entry-label {
+  font-size: 12px;
+}
+
+.entry-list div{
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: $color-primary;
+}
