@@ -2,9 +2,10 @@
 
 .entry-container {
   background-color: black;
-  padding: 15px;
-  min-width: 150px;
+  padding: 25px;
+  min-width: 200px;
   color: white;
+  height: 100%;
 }
 
 .entry-logo-container {
@@ -15,6 +16,12 @@
 
 hr {
   border-top: 1px solid white;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+hr.double-height {
+  border-top: 2px solid white;
 }
 
 .entry-label {
@@ -23,8 +30,18 @@ hr {
 
 .entry-list div{
   font-size: 14px;
+  padding: 5px;
 }
 
-.btn-primary {
+.btn-dashbard {
   background-color: $color-primary;
+  color: white;
+  padding: 3px;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 0px;
+  border: none;
+  &:hover {
+    background-color: lighten($color-primary,15%);
+  }
 }

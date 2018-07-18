@@ -60,7 +60,10 @@
     -webkit-margin-before: 10px;
     -webkit-margin-after: 10px;
   }
-
+  hr.double-height {
+    border-top: 2px solid white;
+  }
+  
   // period
   .context-period-container {
     display: flex;
