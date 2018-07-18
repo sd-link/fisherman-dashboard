@@ -4,12 +4,14 @@
     <input type="text" class="input-dashboard-title" value="DASHBOARD TITLE">
     <button class="btn btn-dashbard btn-dark"><i class="fa fa-arrow-down fa-1x" aria-hidden="true"> </i></button>
   </div>
+  
   <!-- search -->
   <div class="context-search-container">
     <input class="input-search" type="text" placeholder="Search" aria-label="Search">
     <div class="custom-dropdown dropdown-search">all</div>
   </div>
   <hr>
+
   <!-- period -->
   <div class="context-period-container">
     <div class="custom-dropdown dropdown-period">custom</div>
@@ -17,8 +19,9 @@
     <div class="date-picker-container"><my-date-picker class="" [options]="myDatePickerOptions" [(ngModel)]="dateEndModel" required></my-date-picker></div>
   </div>
   <hr>
+
   <!-- clusters (bubbles chart) -->
-  <div class="context-bubble-chart-container">
+  <div class="context-section-container">
     <app-bubble-chart [chartWidth]="400"  [chartHeight]="400" [data]="clusterData"> </app-bubble-chart>
     <div class="dropdowns-container">
       <div class="custom-dropdown dropdown-number">top 10</div>
@@ -28,5 +31,132 @@
       Clusters
     </div>
   </div>
- 
+
+  <!-- platform(pie chart) -->
+  <div class="context-section-container">
+    <pieChart [data]="pieData"></pieChart>    
+    <div class="dropdowns-container">
+      <div class="custom-dropdown dropdown-number">top 10</div>
+    </div>
+    <div class="context-subtitle">
+      Platforms
+    </div>
+    <!--pagenation-->
+    <div class="button-group-up-down-container">
+      <button class="btn btn-up">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+      </button>
+      <button class="btn btn-up">
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Articles -->
+  <div class="context-section-container">
+    <div class="context-subtitle">
+      Articles
+    </div>
+    
+    <div class="context-article-list"> 
+      <table class="table-article-list">
+
+        <tr>
+          <td class="article-bullet">
+            <i class="fa fa-bookmark" aria-hidden="true"></i>
+          </td>
+          <td >
+            <div class="article-title">
+              Grace Fu thinks small social circles are natural and more opportunities fro communication should be provided
+            </div>
+            <div class="article-description">
+              20 Jan 2018, 1715 hrs | Straits Times
+            </div>
+          </td>
+          <td class="article-score">
+            <div >
+              475
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="article-bullet">
+            <i class="fa fa-bookmark" aria-hidden="true"></i>
+          </td>
+          <td >
+            <div class="article-title">
+              Grace Fu thinks small social circles are natural and more opportunities fro communication should be provided
+            </div>
+            <div class="article-description">
+              20 Jan 2018, 1715 hrs | Straits Times
+            </div>
+          </td>
+          <td class="article-score">
+            <div >
+              475
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="article-bullet">
+            <i class="fa fa-bookmark" aria-hidden="true"></i>
+          </td>
+          <td >
+            <div class="article-title">
+              Grace Fu thinks small social circles are natural and more opportunities fro communication should be provided
+            </div>
+            <div class="article-description">
+              20 Jan 2018, 1715 hrs | Straits Times
+            </div>
+          </td>
+          <td class="article-score">
+            <div >
+              475
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="article-bullet">
+            <i class="fa fa-bookmark" aria-hidden="true"></i>
+          </td>
+          <td >
+            <div class="article-title">
+              Grace Fu thinks small social circles are natural and more opportunities fro communication should be provided
+            </div>
+            <div class="article-description">
+              20 Jan 2018, 1715 hrs | Straits Times
+            </div>
+          </td>
+          <td class="article-score">
+            <div >
+              475
+            </div>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <!--pagenation-->    
+    <div class="dropdowns-container">
+      <div class="custom-dropdown dropdown-number">page 1 of 2</div>
+    </div>
+    <div class="button-group-up-down-container">
+      <button class="btn btn-up">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+      </button>
+      <button class="btn btn-up">
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="button-add-container">
+      <button class="btn btn-add-round">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
 </div>

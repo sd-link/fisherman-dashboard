@@ -2,9 +2,9 @@
 
 .context-container {
   background-color: $color-primary;
-  min-width: 400px;
+  width: 500px;
   color: white;
-  padding: 25px;
+  padding: 35px;
 
   // title
   .context-title-container {
@@ -70,19 +70,20 @@
     }    
     .date-picker-container {
       height: 25px;
-      margin-left: 10px;
+      margin-left: 5px;
       min-width: 160px;
     }
   }
 
   // clusters (bubbles chart)
-  .context-bubble-chart-container {
+  .context-section-container{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     background: white;
+    margin-bottom: 20px;
     .dropdowns-container {
       position: absolute;
       bottom: 5px;
@@ -91,6 +92,48 @@
       color: gray;
       font-size: 12px;
     }
+  }
+
+  // article list
+  .context-article-list {
+    .article-bullet {
+      color: black;
+      min-width: 30px;
+      display: flex;
+      padding: 10px 10px; 
+      display: flex;
+      justify-content: center;
+    }
+    .article-score {
+      color: $color-primary;
+      font-size: $fontsize-article-score;
+      min-width: 50px;
+    }
+    .article-title {
+      color: black;
+      font-size: $fontsize-article-title;
+      line-height: $fontsize-article-title;
+    }
+    .article-description {
+      color: pink;
+      font-size: $fontsize-article-description;
+    }
+    table {
+      margin: 10px 0px;
+      border-bottom: 1px solid lightgray;
+      td {
+        padding: 10px 0px;
+      }
+      tr {
+        cursor: pointer;
+        border-top: 1px solid lightgray;
+        &:hover {
+          background-color: lightgray;
+          
+        }
+      }
+    }
+
   }
 
 
@@ -112,6 +155,40 @@
     color: $color-primary;
     font-size: 14px;
     text-transform: uppercase;
+  }
+
+  .button-group-up-down-container {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    .btn-up {
+      background-color: black;
+      color: white;
+      border-radius: 0;
+      font-size: 8px;
+      width: 14px;
+      height: 14px;
+      padding: 0px;
+      margin: -1px;
+    }
+  }
+
+  .button-add-container {
+    position: absolute;
+    top: 10px;
+    right: 25px;  
+    
+    .btn-add-round {
+      display: flex;
+      justify-content: center;
+ 
+      background-color: orange;
+      font-size: 10px;
+      padding: 0 !important;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+    }
   }
 
 

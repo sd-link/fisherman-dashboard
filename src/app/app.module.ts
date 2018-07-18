@@ -10,6 +10,7 @@ import { ContextPanelComponent } from './panels/context-panel/context-panel.comp
 import { DataPanelComponent } from './panels/data-panel/data-panel.component';
 import { MyDatePickerModule } from 'mydatepicker';
 import { BubbleChartComponent } from './panels/context-panel/bubble-chart/bubble-chart.component';
+import { PieChartComponent } from './panels/context-panel/pie-chart/pie-chart.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BubbleChartComponent } from './panels/context-panel/bubble-chart/bubble
     EntryPanelComponent,
     ContextPanelComponent,
     DataPanelComponent,
-    BubbleChartComponent
+    BubbleChartComponent,
+    PieChartComponent
   ],
   imports: [
     BrowserModule,

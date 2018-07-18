@@ -61,11 +61,6 @@ export class BubbleChartComponent implements OnInit, OnChanges {
 
     bubbles.init();
     bubbles.visualize();
-
-    // setTimeout (() => {
-    //   d3.select('.plot circle')
-    // },10);
-
   }
 
 }

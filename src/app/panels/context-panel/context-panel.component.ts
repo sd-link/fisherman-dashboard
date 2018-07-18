@@ -31,6 +31,24 @@ export class ContextPanelComponent implements OnInit {
     {name: 'Ruby', radius: 70, label: '70'},
     {name: 'Python', radius: 40, label: '60'},
     {name: 'd3', radius: 60, label: '100'},
+  ];
+
+  /* pie data */
+  pieData = [
+    { 
+      type: 'My chart',
+      unit: '$',
+      data: [
+        {cat:'Straits Times', val: 10},
+        {cat:'The Smart Local', val: 50},
+        {cat:'Channel New Asia', val: 40},
+        {cat:'Yahoo Simgapore', val: 40},
+        {cat:'Mothersip', val: 40},
+        {cat:'Today Online', val: 40},
+      ],
+      total: 100
+    }
+
   ]
 
   constructor() { }
