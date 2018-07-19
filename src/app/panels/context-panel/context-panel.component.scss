@@ -139,7 +139,7 @@
 
   }
 
-
+  //drop down
   .custom-dropdown {
     cursor: pointer;
     &::before {
@@ -159,23 +159,7 @@
     font-size: 14px;
     text-transform: uppercase;
   }
-
-  .button-group-up-down-container {
-    position: absolute;
-    bottom: 5px;
-    right: 10px;
-    .btn-up {
-      background-color: black;
-      color: white;
-      border-radius: 0;
-      font-size: 8px;
-      width: 14px;
-      height: 14px;
-      padding: 0px;
-      margin: -1px;
-    }
-  }
-
+ 
   .button-add-container {
     position: absolute;
     top: 10px;

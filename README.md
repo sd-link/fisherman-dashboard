@@ -1,2 +1,2 @@
-# angular5-dashboard
+# angular6-dashboard
 

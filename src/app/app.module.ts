@@ -12,6 +12,11 @@ import { DataPanelComponent } from './panels/data-panel/data-panel.component';
 import { MyDatePickerModule } from 'mydatepicker';
 import { BubbleChartComponent } from './panels/context-panel/bubble-chart/bubble-chart.component';
 import { PieChartComponent } from './panels/context-panel/pie-chart/pie-chart.component';
+import { DataTableModule } from 'angular-6-datatable';
+import { GlobalOverviewComponent } from './panels/data-panel/global-overview/global-overview.component';
+import { GlobalConsumptionComponent } from './panels/data-panel/global-consumption/global-consumption.component';
+import { GlobalChatterComponent } from './panels/data-panel/global-chatter/global-chatter.component';
+import { GlobalEngagementComponent } from './panels/data-panel/global-engagement/global-engagement.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +25,19 @@ import { PieChartComponent } from './panels/context-panel/pie-chart/pie-chart.co
     ContextPanelComponent,
     DataPanelComponent,
     BubbleChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    GlobalOverviewComponent,
+    GlobalConsumptionComponent,
+    GlobalChatterComponent,
+    GlobalEngagementComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    MyDatePickerModule
+    MyDatePickerModule,
+    DataTableModule
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue : '/' }

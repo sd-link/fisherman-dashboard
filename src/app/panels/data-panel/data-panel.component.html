@@ -1,3 +1,83 @@
-<p>
-  data-panel works!
-</p>
+<div class="data-container">
+  <!-- global view -->
+  <div class="global-view" *ngIf="currentView==constants.VIEW_GLOBAL">
+    <div class="tabs-panel">
+      <div class="tab" 
+        [class.active]="currentTab==constants.TAB_OVERVIEW"
+        (click)="currentTab=constants.TAB_OVERVIEW">
+        overview
+      </div>
+      <div class="tab" 
+        [class.active]="currentTab==constants.TAB_CONSUMPTION"
+        (click)="currentTab=constants.TAB_CONSUMPTION">
+        consumption
+      </div>
+      <div class="tab" 
+        [class.active]="currentTab==constants.TAB_CHATTER"
+        (click)="currentTab=constants.TAB_CHATTER">
+        chatter
+      </div>
+      <div class="tab" 
+        [class.active]="currentTab==constants.TAB_ENGAGEMENT"
+        (click)="currentTab=constants.TAB_ENGAGEMENT">
+        engagement
+      </div>
+    </div>
+
+    <app-global-overview *ngIf="currentTab==constants.TAB_OVERVIEW"></app-global-overview>
+    <app-global-consumption *ngIf="currentTab==constants.TAB_CONSUMPTION"></app-global-consumption>
+    <app-global-chatter *ngIf="currentTab==constants.TAB_CHATTER"></app-global-chatter>
+    <app-global-engagement *ngIf="currentTab==constants.TAB_ENGAGEMENT"></app-global-engagement>
+
+  </div>
+
+  <!-- cluster view -->
+  <div class="cluster-view" *ngIf="currentView==constants.VIEW_CLUSTER">
+    <div class="tabs-panel">
+      <div class="tab" 
+        [class.active]="currentTab==constants.TAB_CONSUMPTION"
+        (click)="currentTab=constants.TAB_CONSUMPTION">
+        consumption
+      </div>
+      <div class="tab" 
+        [class.active]="currentTab==constants.TAB_CHATTER"
+        (click)="currentTab=constants.TAB_CHATTER">
+        chatter
+      </div>
+      <div class="tab" 
+        [class.active]="currentTab==constants.TAB_ENGAGEMENT"
+        (click)="currentTab=constants.TAB_ENGAGEMENT">
+        engagement
+      </div>
+    </div>
+  </div>
+
+  <!-- article view -->
+  <div class="article-view" *ngIf="currentView==constants.VIEW_ARTICLE">
+    <div class="tabs-panel">
+      <div class="tab" 
+        [class.active]="currentTab==constants.TAB_OVERVIEW"
+        (click)="currentTab=constants.TAB_OVERVIEW">
+        overview
+      </div>
+      <div class="tab" 
+        [class.active]="currentTab==constants.TAB_CONSUMPTION"
+        (click)="currentTab=constants.TAB_CONSUMPTION">
+        consumption
+      </div>
+      <div class="tab" 
+        [class.active]="currentTab==constants.TAB_CHATTER"
+        (click)="currentTab=constants.TAB_CHATTER">
+        chatter
+      </div>
+      <div class="tab" 
+        [class.active]="currentTab==constants.TAB_ENGAGEMENT"
+        (click)="currentTab=constants.TAB_ENGAGEMENT">
+        engagement
+      </div>
+    </div>
+
+  </div>
+   
+
+</div>

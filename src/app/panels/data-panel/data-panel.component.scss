@@ -1,0 +1,58 @@
+@import '~sass/variables';
+:host {
+  width: 100%;
+}
+
+.data-container {
+  width: 100%;
+  padding: 35px;
+  color: black;
+
+  .tabs-panel {
+    width: 100%;
+    display: flex;
+
+    .tab {
+      display: block;
+      padding: 7px 0;
+      text-align: left;
+      font-size: $fontsize-data-tab;
+      font-weight: 700;
+      cursor: pointer;
+      border-bottom: 3px solid lightgrey;
+      &.active {
+        border-bottom: 3px solid $color-primary;
+
+        color: $color-primary;
+      }
+    }
+  }
+
+  .global-view {
+    width: 100%;
+    .tabs-panel {
+      .tab {
+        width: 25%;
+      }
+    }
+  }
+
+  .cluster-view {
+    width: 100%;
+    .tabs-panel {
+      .tab {
+        width: 33.3%;
+      }
+    }
+  }
+
+  .article-view {
+    width: 100%;
+    .tabs-panel {
+      .tab {
+        width: 25%;
+      }
+    }
+  }
+
+}

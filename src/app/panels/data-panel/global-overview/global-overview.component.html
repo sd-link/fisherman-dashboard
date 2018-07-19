@@ -1,0 +1,90 @@
+<div class="view-container">
+  <div class="view-title">
+    <div class="title">Cluster Overview</div>
+    <div class="space"></div>
+  </div>
+  <div class="table-container">
+    <table class="table table-striped" 
+        [mfData]="data" #mf="mfDataTable" 
+        [mfRowsOnPage]="rowsOnPage" 
+        [mfActivePage]="2"
+        >
+      <thead>
+        <tr>
+          <th style="width: 5%">
+              <mfDefaultSorter by="id">id</mfDefaultSorter>
+          </th>
+          <th style="width: 50%">
+              <mfDefaultSorter by="cluster">cluster</mfDefaultSorter>
+          </th>
+          <th style="width: 5%">
+              <mfDefaultSorter by="p1"><img src="assets/images/icons/comment.svg"></mfDefaultSorter>
+          </th>
+          <th style="width: 5%">
+              <mfDefaultSorter by="p2"><img src="assets/images/icons/comment-compare.svg"></mfDefaultSorter>
+          </th>
+          <th style="width: 5%">
+              <mfDefaultSorter by="p3"><i class="fa fa-facebook-square" aria-hidden="true" style="color:#13579e"></i></mfDefaultSorter>
+          </th>
+          <th style="width: 5%">
+              <mfDefaultSorter by="p4"><img src="assets/images/icons/like.svg"></mfDefaultSorter>
+          </th>
+          <th style="width: 5%">
+              <mfDefaultSorter by="p5"><img src="assets/images/icons/move-arrow.svg"></mfDefaultSorter>
+          </th>
+          <th style="width: 5%">
+              <mfDefaultSorter by="p6"><img src="assets/images/icons/comment.svg"></mfDefaultSorter>
+          </th>
+          <th style="width: 5%">
+              <mfDefaultSorter by="p7"><img src="assets/images/icons/plus-yellow-circle.svg"></mfDefaultSorter>
+          </th>
+          <th style="width: 5%">
+              <mfDefaultSorter by="p8"><img src="assets/images/icons/move-arrow.svg"></mfDefaultSorter>
+          </th>
+          <th style="width: 5%">
+              <mfDefaultSorter by="p9"><img src="assets/images/icons/comment.svg"></mfDefaultSorter>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of mf.data">
+    
+          <td class="table-id">{{item.id}}</td>
+          <td class="table-article">{{item.cluster}}</td>
+          <td class="table-score">{{item.p1}}</td>
+          <td class="table-score">{{item.p2}}</td>
+          <td class="table-score">{{item.p3}}</td>
+          <td class="table-score">{{item.p4}}</td>
+          <td class="table-score">{{item.p5}}</td>
+          <td class="table-score">{{item.p6}}</td>
+          <td class="table-score">{{item.p7}}</td>
+          <td class="table-score">{{item.p8}}</td>
+          <td class="table-score">{{item.p9}}</td>
+          
+        </tr>
+      </tbody>
+      <!-- <tfoot>
+        <tr>
+          <td colspan="13">
+            <mfBootstrapPaginator></mfBootstrapPaginator>
+          </td>
+        </tr>
+      </tfoot> -->
+    </table>
+
+    <!--pagenation-->    
+    <div class="dropdowns-container">
+      <div class="custom-dropdown dropdown-number">page {{currentPage}} of {{totalPages}}</div>
+    </div>
+    <div class="button-group-up-down-container">
+      <button class="btn btn-up" *ngIf="currentPage>1" (click)="setPage(currentPage-1)">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+      </button>
+      <button class="btn btn-up" *ngIf="currentPage<totalPages" (click)="setPage(currentPage+1)">
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+      </button>
+    </div>
+
+
+  </div>
+</div>

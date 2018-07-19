@@ -7,7 +7,7 @@
 }
 
 
-
+// date picker
 .mydp {
   height: 25px !important;
   border: none !important;
@@ -35,6 +35,144 @@
         color: white;
         border-radius: 0px;
       }
+    }
+  }
+}
+
+// data table
+
+.view-container {
+  position: relative;
+  padding: 20px 0px;
+  border-bottom: 2px solid lightgray;
+  
+  width: 100%;
+
+  .view-title {
+    width:  100%;
+    display: flex;
+
+    .title {
+      padding: 5px;
+      color: $color-primary;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-top: 1 px solid $color-primary;
+      width: 200px;
+    }
+    .space {
+      width: 100%;
+      border-top: 1px solid lightgrey;
+    }
+  }
+  .table-container {
+    padding: 10px;
+    table {
+      border-bottom: 1px solid lightgrey;
+      thead {
+        font-size: 14px;
+        color: $color-primary;
+        th {
+          border: none;
+          padding: 5px;
+          a {
+            position: relative;
+            padding: 0 7px;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+            &:before {
+              font-family: FontAwesome;
+              content: "\f0dc";
+              color: lightgray;
+              font-size: 10px;
+              margin: 0px 5px 10px 0px;
+              position: absolute;
+              left: 0px;
+              top: 3px;          
+            }
+            .glyphicon-triangle-top::before {
+              font-family: FontAwesome;
+              content: "\f0de";
+              font-size: 10px;
+              color: $color-primary;
+              width: 10px;
+              position: absolute;
+              left: 0px;
+              top: 3px;  
+            }
+            .glyphicon-triangle-bottom::before {
+              font-family: FontAwesome;
+              content: "\f0dd";
+              font-size: 10px;
+              color: $color-primary;
+              width: 10px;
+              position: absolute;
+              left: 0px;
+              top: 3px;  
+            }
+          }
+        }
+      }
+      tbody {
+        td {
+          padding: 5px;
+          
+          &.table-article {
+            font-size: $fontsize-article-title;
+            line-height: $fontsize-article-title;
+          }
+
+          &.table-score {
+            font-size: $fontsize-article-score;
+            color: $color-primary;
+          }
+
+        }
+      }
+
+    }
+
+  }
+
+
+
+}
+
+// page nation
+.button-group-up-down-container {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  .btn-up {
+    background-color: black;
+    color: white;
+    border-radius: 0;
+    font-size: 8px;
+    width: 14px;
+    height: 14px;
+    padding: 0px;
+    margin: 1px;
+  }
+}
+.dropdowns-container {    
+  position: absolute;
+  bottom: 5px;
+
+  .custom-dropdown {
+    cursor: pointer;
+    font-size: 12px;
+    color: gray;
+
+    
+    &::before {
+      font-family: FontAwesome;
+      display: inline-block;
+      padding: 1px 4px;
+      vertical-align: middle;
+      content: "\f107";
+      
     }
   }
 }

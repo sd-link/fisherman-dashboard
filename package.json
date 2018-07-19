@@ -27,6 +27,7 @@
     "@angular/router": "^6.0.0",
     "@angular/upgrade": "^6.0.0",
     "@types/lodash-es": "^4.17.0",
+    "angular-6-datatable": "^0.8.0",
     "angular-font-awesome": "^3.1.2",
     "angular-in-memory-web-api": "~0.5.0",
     "bootstrap": "^4.1.0",
