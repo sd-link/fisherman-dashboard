@@ -54,6 +54,7 @@ export class ContextPanelComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('sldfjksdflj')
   }
 
 }
