@@ -34,15 +34,21 @@ hr.double-height {
 }
 
 .btn-dashbard {
+  display: flex;
   background-color: $color-primary;
   color: white;
-  padding: 3px;
+  padding: 2px;
   font-size: 14px;
   width: 100%;
   border-radius: 0px;
   border: none;
   &:hover {
     background-color: lighten($color-primary,15%);
+  }
+  img {
+    margin: 3px 0 3px 3px;
+    width: 20px;
+    height: 14px;
   }
 }
 

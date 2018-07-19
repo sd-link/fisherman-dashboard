@@ -27,6 +27,12 @@
       height: 30px;
       padding: 3px;
       width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-width: 16px;
+      }
     }   
   }
 
